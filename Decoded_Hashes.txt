@@ -1,0 +1,119 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+CONNECTION 1
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Encoded/Cipher= H572uA9ebJKbbjjOPobKYw==
+Decoded=
+
+Encoded/Cipher= LJWTROATRRLBFCILTWZADJZMXZPTOIEPPNSYBPYXZNLXIDALRIMMQZVPQETWDQRYIOJJLXCCDEIOMYEMEGESIDQRYICBSTWTAEJTTKLWPJCDPHHPPYXSMNCILBZCSQIXPWDIRPMDLTQJPZPYXEWESIPVETXJESTGSATRRDQE
+KEY= LILLE
+Decoded=
+
+Encoded/Cipher= - .... . .-. . / .- .-. . / ... .--. .. . ... / .-- .- - -.-. .... .. -. --.
+Decoded= THERE ARE SPIES WATCHING
+
+Encoded/Cipher=
+Decoded=
+
+Encoded/Cipher=
+Decoded=
+
+Encoded/Cipher=
+Decoded=
+
+Encoded/Cipher=
+Decoded=
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+CONNECTION 2 - Stream 111
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Encoded/Cipher= 3c85f114ac179093df971f83a23e3be9
+Decoded= Trout
+Reasoning - Used common words list and used hashcat
+
+Encoded/Cipher= f74dedb48f968ce4e1059a0fc59fdc67
+Decoded= Cologne
+Reasoning - Used germancities words list and used hashcat
+
+Encoded/Cipher= MYzJQjYmKdJkBxEe87tDowzbefGKZCYM1VmmRfLf2A4=
+
+Decoded=
+
+Encoded/Cipher= ULUULZ
+Decoded=
+
+Encoded/Cipher=
+Decoded=
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+CONNECTION 3
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Encoded/Cipher= BIYQEL UH NCUADUYQC ZMS GPGF TUIM TLOIIMTLP UEWWUP 40,000 FVUKAQX-RLKAUIA KQPZM OIULP IA BJL TCG KJPXXEMPZ FYYMXPECBV UOAQ OTWLK. CG ECZ DYCWTAQX VV LBXS GPCA 63,000 AZ GPG JACAA RYAXHKGK NS GPG HGMGZCSUUA UKUF BNL DLQH FBQSQH SZQT M QNZGOAOFM KU IYFBGYZ MLLPLK, UOWWA FQB UQUFBF JGMALR BJLK QRZG KGY GW GUFYE KKYOOYIVPAH. NCVOALVBKLE LRKQCQLRL 40,061 EVUHF WP AGYFLCF MZGMT H DUVL QU M JEWRLDNL IDVGN 6 ZQNLE (10EZ) NTVY NUM UAALNOG MMWVTKAK. YNZNPQL GPCA PUL, 27-GGHD-IYL EODCFBKUM PNTG OMX OMGU MLEMUAQX NVF JTUEOGK ICGP DYQUXQPN MHQ MPAQLVVI HZX QQUWAMVVI VR MGWNLZ JEWRLDNL, XQSUWR ACF. EBR ECZ FBR BJPDX CMTZAH NZTLENRL QCQL GPG HXFROGK FBRNV.
+KEY= MUNICH
+
+Decoded=
+
+
+Encoded/Cipher= xVPDRdUtzsjxlYaJQUOSYQ==
+Decoded=
+
+Encoded/Cipher= BIGQPTLIZYVMAMORCNAJSSJMFUETUUVXWOGDQCZATEBQSEHNAJKLMYLFEODWVSVMKYEZQVJIKDWKXPQGIMOUFRPUQLYSLPWWMVQVLWMEVZWKDWKITAYRVQFZDWLUXWMMTWCPUMFSYBYGJXUAVVVVYWKLWPKLWMQDCMXFATGCDNVXMOZEMYGWJIKPZ
+KEY =  REIMS
+Decoded=
+
+Encoded/Cipher=
+Decoded=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Several base64-encoded values were identified as AES-encrypted ciphertexts. In each case, the salt was recovered directly from the network traffic in the controller message:
+“Affirmative. Yes. Salty 241fa86763b85341”
+This salt was reused across multiple encrypted values.
+Ciphertext:
+MYzJQjYmKdJkBxEe87tDowzbefGKZCYM1VmmRfLf2A4=
+Decrypted value: APPLECORE
+Password: Munich
+This value required identification of both the salt and the password. OpenSSL was used to attempt decryption, and a Python script was written to iterate through a German cities’ wordlist using lowercase, uppercase and sentence case variations. A successful match was found for “Munich”.
+The full command and script will be added later.
+
+Ciphertext:
+xVPDRdUtzsjxlYaJQUOSYQ==
+Decrypted value: [Placeholder]
+Password: WIESBADEN
+ 
+The same salt and approach were used as above. The password “Wiesbaden” was identified from the German cities wordlist. Final decrypted output will be added later.
+
+Ciphertext:
+H572uA9ebJKbbjjOPobKYw==
+Decrypted value: [Placeholder]
+Password: [Placeholder]
+This ciphertext was processed using the same AES decryption approach. Although the salt was successfully identified, the correct password has not yet been confirmed. Further wordlist testing is required.
+
+
+
+
+
+
+
+Encoded/Cipher=
+Decoded=
