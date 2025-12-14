@@ -1,5 +1,9 @@
 printf '%s' 'xVPDRdUtzsjxlYaJQUOSYQ==' | base64 -d | openssl enc -aes-128-cbc -d -pbkdf2 -S 241fa86763b85341 | xxd
 
+printf '%s' 'xVPDRdUtzsjxlYaJQUOSYQ==' \
+| base64 -d \
+| openssl enc -aes-128-cbc -d -pbkdf2 -S 241fa86763b85341 \
+| xxd -p -c 256
 
 
 Base64 AES-encrypted Values
