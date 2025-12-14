@@ -1,3 +1,7 @@
+printf '%s' 'xVPDRdUtzsjxlYaJQUOSYQ==' | base64 -d | openssl enc -aes-128-cbc -d -pbkdf2 -S 241fa86763b85341 | xxd
+
+
+
 Base64 AES-encrypted Values
 Several base64-encoded values were identified as AES-encrypted ciphertexts. In each case, the salt was recovered directly from the network traffic in the controller message:
 “Affirmative. Yes. Salty 241fa86763b85341”
